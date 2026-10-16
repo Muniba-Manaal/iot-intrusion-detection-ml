@@ -1,10 +1,10 @@
-# 🛡️ IoT Network Intrusion Detection – A Comparative Study of ML Models
+# IoT Network Intrusion Detection – A Comparative Study of ML Models
 
 Detecting and classifying cyberattacks in IoT network traffic using **Decision Tree**, **Gaussian Naive Bayes**, and a **Neural Network**, trained on the **IoTID20** dataset.
 
 ---
 
-## 📌 Overview
+## Overview
 
 Smart homes, cameras, and connected devices make up a fast-growing part of today's networks, and they are frequent targets of attacks such as botnets, denial-of-service floods, and network scanning. Monitoring this traffic by hand is not feasible at scale.
 
@@ -17,7 +17,7 @@ Three models from different families (tree-based, probabilistic, and neural) are
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Build an end-to-end pipeline from raw network flows to trained classifiers.
 - Compare a **Decision Tree**, **Gaussian Naive Bayes**, and a **feed-forward Neural Network**.
@@ -48,7 +48,7 @@ The data is highly **imbalanced**: Mirai botnet traffic makes up about two-third
 
 ---
 
-## ⚙️ Methodology
+## Methodology
 
 ```
 Raw flows ─► Cleaning ─► Encoding ─► Outlier removal ─► Train/test split ─► Model training ─► Evaluation
@@ -71,7 +71,7 @@ Raw flows ─► Cleaning ─► Encoding ─► Outlier removal ─► Train/te
 
 ---
 
-## 📊 Results
+## Results
 
 ### Model comparison
 
@@ -109,7 +109,7 @@ Raw flows ─► Cleaning ─► Encoding ─► Outlier removal ─► Train/te
 
 ---
 
-## 💡 Key Insights
+## Key Insights
 
 - **Accuracy and F1 tell different stories.** Naive Bayes and the Neural Network reached the highest accuracy, but their macro F1-scores show that their predictions concentrated on the dominant class. On imbalanced security data, macro F1 and per-class recall are the more meaningful measures.
 - **The Decision Tree distributes predictions across all classes.** Although its overall accuracy is lower, it was the only model that predicted every attack type, which makes it the most informative baseline for multiclass detection.
@@ -118,7 +118,7 @@ Raw flows ─► Cleaning ─► Encoding ─► Outlier removal ─► Train/te
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - Apply **class balancing** (class weights, SMOTE, or stratified sampling) so minority attacks receive more attention.
 - Add **feature scaling** and **feature selection** to focus on the most informative flow statistics.
@@ -128,7 +128,7 @@ Raw flows ─► Cleaning ─► Encoding ─► Outlier removal ─► Train/te
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Language:** Python  
 **Data processing:** pandas, NumPy  
